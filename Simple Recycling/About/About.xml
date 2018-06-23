@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Simple Recycling</name>
+	<author>Lanilor</author>
+	<url>https://github.com/Lanilor/</url>
+	<targetVersion>1.0.0</targetVersion>
+	<description>
+&lt;size=20&gt;Simple Recyclning&lt;/size&gt;
+
+A simple mod that adds recycling of apparel in the same way weapons are smeltable in the core version.
+
+To recycle apparel, research "apparel recycling" and then add the bill to a tailoring workbench.
+	</description>
+</ModMetaData>
