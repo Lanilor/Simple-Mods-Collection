@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef>
+		<defName>SteelBridge</defName>
+		<label>steel bridge</label>
+		<description>A flat steel surface on supportive beams which can be built over water. You can even build heavy structures on steel bridges, but be carefuly, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+		<texturePath>Terrain/Surfaces/SteelBridge</texturePath>
+		<uiIconPath>Terrain/Surfaces/SteelBridge_MenuIcon</uiIconPath>
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<designationCategory>Structure</designationCategory>
+		<fertility>0</fertility>
+		<constructEffect>ConstructMetal</constructEffect>
+		<acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>400</renderPrecedence>
+		<statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<costList>
+			<Steel>12</Steel>
+		</costList>
+		<destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold>
+		<destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+		<destroyEffect>Bridge_Collapse</destroyEffect>
+		<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+		<researchPrerequisites>
+			<li>SteelBridges</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+</Defs>
