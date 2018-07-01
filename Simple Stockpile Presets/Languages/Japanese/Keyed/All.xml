@@ -2,7 +2,7 @@
 <LanguageData>
 
   <!-- Stockpile presets -->
-  <CommandStorageSettingsPresetsLabel>プリセット選択</CommandStorageSettingsPresetsLabel>
+  <CommandStorageSettingsPresetsLabel>プリセット　選択</CommandStorageSettingsPresetsLabel>
   <CommandStorageSettingsPresetsDesc>このゾーンのストレージフィルタ設定を、選択したプリセット形式を使用して設定します。</CommandStorageSettingsPresetsDesc>
   <CSSP_GeneralFreezer>一般的な冷凍庫</CSSP_GeneralFreezer>
   <CSSP_FreezerNoMeals>冷凍庫（食事抜き）</CSSP_FreezerNoMeals>
