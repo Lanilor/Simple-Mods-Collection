@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Simple Bulk Drugs</name>
+	<author>Lanilor</author>
+	<url>https://github.com/Lanilor/</url>
+	<targetVersion>1.0.0</targetVersion>
+	<description>
+&lt;size=20&gt;Simple Bulk Drugs&lt;/size&gt;
+
+A simple mod that adds bulk drug production recipes. Produce wake-up, medicine or other drugs in bulk to save time when crafting and carrying ingredients.
+
+No research required (currently, may change). Only higher skill requirements than the single recipes to balance the increased efficiency.
+	</description>
+</ModMetaData>

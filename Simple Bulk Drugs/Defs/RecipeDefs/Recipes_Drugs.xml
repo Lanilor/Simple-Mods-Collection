@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="MakeDrugBulkBase" Abstract="True">
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+	</RecipeDef>
+  
+  <!-- =============== Drugs =============== -->
+
+	<RecipeDef ParentName="MakeDrugBulkBase">
+		<defName>MakeGoJuiceBulk</defName>
+		<label>make five go-juice</label>
+		<description>Produce five go-juice at once to save time when crafting and carrying ingredients.</description>
+		<jobString>Producing go-juice.</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Yayo</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Neutroamine</li>
+				<li>Yayo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GoJuice>5</GoJuice>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+			<Intellectual>7</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>GoJuiceProduction</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeDrugBulkBase">
+		<defName>MakePenoxycylineBulk</defName>
+		<label>make five penoxycyline</label>
+		<description>Produce five penoxycyline at once to save time when crafting and carrying ingredients.</description>
+		<jobString>Producing penoxycyline.</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Penoxycyline>5</Penoxycyline>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeDrugBulkBase">
+		<defName>MakeFlakeBulk</defName>
+		<label>make five flake</label>
+		<description>Produce five flake at once to save time when crafting and carrying ingredients.</description>
+		<jobString>Producing flake.</jobString>
+		<workAmount>1250</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PsychoidLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PsychoidLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Flake>5</Flake>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeDrugBulkBase">
+		<defName>MakeYayoBulk</defName>
+		<label>make five yayo</label>
+		<description>Produce five yayo at once to save time when crafting and carrying ingredients.</description>
+		<jobString>Producing yayo.</jobString>
+		<workAmount>1750</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PsychoidLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PsychoidLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Yayo>5</Yayo>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+			<Intellectual>7</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>PsychiteRefining</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeDrugBulkBase">
+		<defName>MakeSmokeleafJointBulk</defName>
+		<label>make five smokeleaf joints</label>
+		<description>Produce five smokeleaf joints at once to save time when crafting and carrying ingredients.</description>
+		<jobString>Producing smokeleaf joints.</jobString>
+		<workAmount>2250</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<SmokeleafJoint>5</SmokeleafJoint>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeDrugBulkBase">
+		<defName>MakeWakeUpBulk</defName>
+		<label>make five wake-up</label>
+		<description>Produce five wake-up at once to save time when crafting and carrying ingredients.</description>
+		<jobString>Producing wake-up.</jobString>
+		<workAmount>4500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<WakeUp>5</WakeUp>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>WakeUpProduction</researchPrerequisite>
+	</RecipeDef>
+
+  <!-- =============== Medicine =============== -->
+
+	<RecipeDef ParentName="MakeDrugBulkBase">
+		<defName>MakeMedicineIndustrialBulk</defName>
+		<label>make four medicine</label>
+		<description>Produce four medicine at once to save time when crafting and carrying ingredients.</description>
+		<jobString>Producing medicine.</jobString>
+		<workAmount>2800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineHerbal</li>
+				<li>Neutroamine</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MedicineIndustrial>4</MedicineIndustrial>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+			<Intellectual>7</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

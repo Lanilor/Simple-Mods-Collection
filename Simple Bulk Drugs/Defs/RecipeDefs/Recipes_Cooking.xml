@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>MakePsychoidPekoeBulk</defName>
+		<label>Brew five psychoid pekoe</label>
+		<description>Brew five psychoid pekoe at once to save time when crafting and carrying ingredients.</description>
+		<jobString>Brewing psychoid pekoe.</jobString>
+		<workAmount>2000</workAmount>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PsychoidLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PsychoidLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PsychoidPekoe>5</PsychoidPekoe>
+		</products>
+		<skillRequirements>
+			<Intellectual>2</Intellectual>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>PsychoidBrewing</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>
