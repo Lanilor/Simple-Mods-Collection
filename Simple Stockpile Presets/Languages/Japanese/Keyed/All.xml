@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Stockpile presets -->
+  <CommandStorageSettingsPresetsLabel>プリセット選択</CommandStorageSettingsPresetsLabel>
+  <CommandStorageSettingsPresetsDesc>このゾーンのストレージフィルタ設定を、選択したプリセット形式を使用して設定します。</CommandStorageSettingsPresetsDesc>
+  <CSSP_GeneralFreezer>一般的な冷凍庫</CSSP_GeneralFreezer>
+  <CSSP_FreezerNoMeals>冷凍庫（食事抜き）</CSSP_FreezerNoMeals>
+  <CSSP_Meals>食事</CSSP_Meals>
+  <CSSP_GeneralStorage>一般的な貯蔵庫</CSSP_GeneralStorage>
+  <CSSP_GeneralMedical>一般な医療品</CSSP_GeneralMedical>
+  <CSSP_Drugs>ドラッグ</CSSP_Drugs>
+  <CSSP_MaterialsOutside>資源（屋外）</CSSP_MaterialsOutside>
+  <CSSP_Materials>資源</CSSP_Materials>
+  <CSSP_VariousOthers>その他(色々)</CSSP_VariousOthers>
+  <CSSP_Shells>砲弾</CSSP_Shells>
+  <CSSP_Weapons>武器</CSSP_Weapons>
+  <CSSP_CleanApparel>清潔な衣服</CSSP_CleanApparel>
+  <CSSP_TaintedApparel>汚れた衣服</CSSP_TaintedApparel>
+  <CSSP_Chunks>塊</CSSP_Chunks>
+  <CSSP_Rotting>腐敗</CSSP_Rotting>
+
+</LanguageData>
