@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Stockpile presets -->
+	<CommandStorageSettingsPresetsLabel>Select preset</CommandStorageSettingsPresetsLabel>
+	<CommandStorageSettingsPresetsDesc>Set this zone's storage filter settings via a chosen preset.</CommandStorageSettingsPresetsDesc>
+	<CSSP_GeneralFreezer>General freezer</CSSP_GeneralFreezer>
+	<CSSP_FreezerNoMeals>Freezer (no meals)</CSSP_FreezerNoMeals>
+	<CSSP_Meals>Meals</CSSP_Meals>
+	<CSSP_GeneralStorage>General storage</CSSP_GeneralStorage>
+	<CSSP_GeneralMedical>General medical</CSSP_GeneralMedical>
+	<CSSP_Drugs>Drugs</CSSP_Drugs>
+	<CSSP_MaterialsOutside>Materials (outside)</CSSP_MaterialsOutside>
+	<CSSP_Materials>Materials</CSSP_Materials>
+	<CSSP_VariousOthers>Various others</CSSP_VariousOthers>
+	<CSSP_Shells>Shells</CSSP_Shells>
+	<CSSP_Weapons>Weapons</CSSP_Weapons>
+	<CSSP_CleanApparel>Clean apparel</CSSP_CleanApparel>
+	<CSSP_TaintedApparel>Tainted apparel</CSSP_TaintedApparel>
+	<CSSP_Chunks>Chunks</CSSP_Chunks>
+	<CSSP_Rotting>Rotting</CSSP_Rotting>
+
+</LanguageData>
