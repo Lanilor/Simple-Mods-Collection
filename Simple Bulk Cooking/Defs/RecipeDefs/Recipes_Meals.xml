@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =============== Core bulk meals =============== -->
+
+	<RecipeDef Name="CookMealBulkBase" ParentName="CookMealBase" Abstract="True">
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	</RecipeDef>
+	
+	<RecipeDef Name="CookMealSimpleBulk" ParentName="CookMealBulkBase">
+		<defName>CookMealSimpleBulk</defName>
+		<label>cook four simple meals</label>
+		<description>Cooks four straightforward meals from one ingredient.</description>
+		<jobString>Cooking simple meals.</jobString>
+		<workAmount>1050</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>FoodRaw</li>
+			  </categories>
+			</filter>
+			<count>2.0</count>
+		  </li>
+		</ingredients>
+		<products>
+			<MealSimple>4</MealSimple>
+		</products>
+		<skillRequirements>
+			<Cooking>5</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBulkBase">
+		<defName>CookMealFineBulk</defName>
+		<label>cook four fine meals</label>
+		<description>Cooks four somewhat complex meals from a combination of raw meat and raw plant ingredients.</description>
+		<jobString>Cooking fine meals.</jobString>
+		<workAmount>1575</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>1.0</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1.0</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealFine>4</MealFine>
+		</products>
+		<skillRequirements>
+			<Cooking>9</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBulkBase">
+		<defName>CookMealLavishBulk</defName>
+		<label>cook four lavish meals</label>
+		<description>Cooks four very complex meals from a combination of raw meat and raw plant ingredients. Much of the ingredients are wasted.</description>
+		<jobString>Cooking lavish meals.</jobString>
+		<workAmount>2800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>2.0</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2.0</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealLavish>4</MealLavish>
+		</products>
+		<skillRequirements>
+			<Cooking>11</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBulkBase">
+		<defName>CookMealSurvivalBulk</defName>
+		<label>cook four packaged survival meals</label>
+		<description>Cooks four packaged survival meals from a combination of raw meat and raw plant ingredients. Much of the ingredients are wasted.</description>
+		<jobString>Cooking survival meals.</jobString>
+		<workAmount>4900</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>2.0</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>2.0</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealSurvivalPack>4</MealSurvivalPack>
+		</products>
+		<skillRequirements>
+			<Cooking>11</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

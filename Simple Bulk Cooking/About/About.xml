@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Simple Bulk Cooking</name>
+	<author>Lanilor</author>
+	<url>https://github.com/Lanilor/</url>
+	<targetVersion>1.0.0</targetVersion>
+	<description>
+&lt;size=20&gt;Simple Bulk Cooking&lt;/size&gt;
+
+A simple mod that adds bulk cooking recipes of meals and other food products. Cook meals in bulks of 4 to save time when cooking and carrying ingredients.
+
+No research required. Only a higher cooking skill level than the single meal recipe to balance the increased efficiency.
+	</description>
+</ModMetaData>
