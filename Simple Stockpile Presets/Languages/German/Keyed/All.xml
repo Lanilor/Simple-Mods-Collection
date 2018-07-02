@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Stockpile presets -->
+	<CommandStorageSettingsPresetsLabel>Wähle Voreinstellung</CommandStorageSettingsPresetsLabel>
+	<CommandStorageSettingsPresetsDesc>Setze die Filtereinstellungen dieser Zone durch Auswählen einer Voreinstellung.</CommandStorageSettingsPresetsDesc>
+	<CSSP_GeneralFreezer>Kühlschrank allgemein</CSSP_GeneralFreezer>
+	<CSSP_FreezerNoMeals>Kühlschrank (keine Gerichte)</CSSP_FreezerNoMeals>
+	<CSSP_Meals>Gerichte</CSSP_Meals>
+	<CSSP_GeneralStorage>Lager allgemein</CSSP_GeneralStorage>
+	<CSSP_GeneralMedical>Medizin allgemein</CSSP_GeneralMedical>
+	<CSSP_Drugs>Drogen</CSSP_Drugs>
+	<CSSP_MaterialsOutside>Baumaterial (draußen)</CSSP_MaterialsOutside>
+	<CSSP_Materials>Baumaterial</CSSP_Materials>
+	<CSSP_VariousOthers>Verschiedenes</CSSP_VariousOthers>
+	<CSSP_Shells>Mörsermunition</CSSP_Shells>
+	<CSSP_Weapons>Waffen</CSSP_Weapons>
+	<CSSP_CleanApparel>Saubere Kleidung</CSSP_CleanApparel>
+	<CSSP_TaintedApparel>Verdreckte Kleiding</CSSP_TaintedApparel>
+	<CSSP_Chunks>Steine</CSSP_Chunks>
+	<CSSP_Rotting>Zur Verrottung</CSSP_Rotting>
+
+</LanguageData>
