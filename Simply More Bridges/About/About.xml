@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Simply More Bridges</name>
+	<author>Lanilor</author>
+	<url>https://github.com/Lanilor/</url>
+	<targetVersion>1.0.0</targetVersion>
+	<description>
+&lt;size=20&gt;Simply More Bridges&lt;/size&gt;
+
+A simple mod that adds more briges types on top of the wood bridges that rimworld core provides. Heavy briges work the same way as wood ones, but also provide support for heavy stuctures. Deep water bridges can be built in deep water.
+
+You can build these new bridges out of steel, plasteel and stone types.
+
+Research "heavy bridges" and "deep water bridges" to build them.
+	</description>
+</ModMetaData>

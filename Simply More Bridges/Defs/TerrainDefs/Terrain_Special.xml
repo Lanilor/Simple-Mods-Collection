@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<TerrainDef Name="MoreBridgeBase" Abstract="True">
+		<edgeType>Hard</edgeType>
+		<renderPrecedence>400</renderPrecedence>
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<designationCategory>Structure</designationCategory>
+		<fertility>0</fertility>
+		<constructEffect>ConstructMetal</constructEffect>
+		<acceptTerrainSourceFilth>True</acceptTerrainSourceFilth>
+		<destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+		<destroyEffect>Bridge_Collapse</destroyEffect>
+		<destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+	</TerrainDef>
+
+  <!--======================== Deep water bridge ========================-->
+
+	<TerrainDef Name="DeepWaterBridgeBase" ParentName="MoreBridgeBase" Abstract="True">
+		<description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+		<uiIconPath>Terrain/Surfaces/DeepWaterBridge_MenuIcon</uiIconPath>
+		<terrainAffordanceNeeded>BridgeableDeep</terrainAffordanceNeeded>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<statBases>
+			<WorkToBuild>3200</WorkToBuild>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<destroyOnBombDamageThreshold>40</destroyOnBombDamageThreshold>
+		<designatorDropdown>Bridge_DeepWater</designatorDropdown>
+		<researchPrerequisites>
+			<li>DeepWaterBridges</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef Name="DeepWaterBridgeMetalBase" ParentName="DeepWaterBridgeBase" Abstract="True">
+		<texturePath>Terrain/Surfaces/DeepWaterBridgeMetal</texturePath>
+	</TerrainDef>
+	
+	<TerrainDef Name="DeepWaterBridgeStoneBase" ParentName="DeepWaterBridgeBase" Abstract="True">
+		<texturePath>Terrain/Surfaces/DeepWaterBridgeStone</texturePath>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DeepWaterBridgeMetalBase">
+		<defName>DeepWaterBridgeSteel</defName>
+		<label>steel deep water bridge</label>
+		<color>(105,105,105)</color>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DeepWaterBridgeMetalBase">
+		<defName>DeepWaterBridgePlasteel</defName>
+		<label>plasteel deep water bridge</label>
+		<color>(160,178,181)</color>
+		<costList>
+			<Steel>5</Steel>
+			<Plasteel>15</Plasteel>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DeepWaterBridgeStoneBase">
+		<defName>DeepWaterBridgeSandstone</defName>
+		<label>sandstone deep water bridge</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<Steel>5</Steel>
+			<BlocksSandstone>17</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DeepWaterBridgeStoneBase">
+		<defName>DeepWaterBridgeGranite</defName>
+		<label>granite deep water bridge</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<Steel>5</Steel>
+			<BlocksGranite>17</BlocksGranite>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DeepWaterBridgeStoneBase">
+		<defName>DeepWaterBridgeLimestone</defName>
+		<label>limestone deep water bridge</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<Steel>5</Steel>
+			<BlocksLimestone>17</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DeepWaterBridgeStoneBase">
+		<defName>DeepWaterBridgeSlate</defName>
+		<label>slate deep water bridge</label>
+		<color>(105,105,105)</color>
+		<costList>
+			<Steel>5</Steel>
+			<BlocksSlate>17</BlocksSlate>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DeepWaterBridgeStoneBase">
+		<defName>DeepWaterBridgeMarble</defName>
+		<label>marble deep water bridge</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<Steel>5</Steel>
+			<BlocksMarble>17</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+  <!--======================== Heavy bridge ========================-->
+
+	<TerrainDef Name="HeavyBridgeBase" ParentName="MoreBridgeBase" Abstract="True">
+		<description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+		<uiIconPath>Terrain/Surfaces/HeavyBridge_MenuIcon</uiIconPath>
+		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+		<statBases>
+			<WorkToBuild>2200</WorkToBuild>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold>
+		<designatorDropdown>Bridge_Heavy</designatorDropdown>
+		<researchPrerequisites>
+			<li>HeavyBridges</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef Name="HeavyBridgeMetalBase" ParentName="HeavyBridgeBase" Abstract="True">
+		<texturePath>Terrain/Surfaces/HeavyBridgeMetal</texturePath>
+	</TerrainDef>
+	
+	<TerrainDef Name="HeavyBridgeStoneBase" ParentName="HeavyBridgeBase" Abstract="True">
+		<texturePath>Terrain/Surfaces/HeavyBridgeStone</texturePath>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="HeavyBridgeMetalBase">
+		<defName>HeavyBridgeSteel</defName>
+		<label>steel bridge</label>
+		<color>(105,105,105)</color>
+		<costList>
+			<Steel>12</Steel>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="HeavyBridgeMetalBase">
+		<defName>HeavyBridgePlasteel</defName>
+		<label>plasteel bridge</label>
+		<color>(160,178,181)</color>
+		<costList>
+			<Steel>3</Steel>
+			<Plasteel>9</Plasteel>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="HeavyBridgeStoneBase">
+		<defName>HeavyBridgeSandstone</defName>
+		<label>sandstone bridge</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<Steel>3</Steel>
+			<BlocksSandstone>10</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="HeavyBridgeStoneBase">
+		<defName>HeavyBridgeGranite</defName>
+		<label>granite bridge</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<Steel>3</Steel>
+			<BlocksGranite>10</BlocksGranite>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="HeavyBridgeStoneBase">
+		<defName>HeavyBridgeLimestone</defName>
+		<label>limestone bridge</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<Steel>3</Steel>
+			<BlocksLimestone>10</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="HeavyBridgeStoneBase">
+		<defName>HeavyBridgeSlate</defName>
+		<label>slate bridge</label>
+		<color>(105,105,105)</color>
+		<costList>
+			<Steel>3</Steel>
+			<BlocksSlate>10</BlocksSlate>
+		</costList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="HeavyBridgeStoneBase">
+		<defName>HeavyBridgeMarble</defName>
+		<label>marble bridge</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<Steel>3</Steel>
+			<BlocksMarble>10</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+</Defs>

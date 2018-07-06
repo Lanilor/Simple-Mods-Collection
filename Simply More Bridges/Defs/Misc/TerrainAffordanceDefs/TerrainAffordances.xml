@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Deep water bridges can be built here -->
+	<TerrainAffordanceDef>
+		<defName>BridgeableDeep</defName>
+		<label>bridgeable deep</label>
+		<order>2450</order>
+	</TerrainAffordanceDef>
+
+</Defs>
