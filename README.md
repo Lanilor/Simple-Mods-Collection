@@ -16,10 +16,11 @@ A mod that adds recycling of apparel in the same way weapons are smeltable in th
 
 To recycle apparel, research "apparel recycling" and then add the bill to a tailoring workbench.
 
-## Simple Steel Bridges
-A mod that adds steel briges on top of the wood bridges that rimworld core provides. Steel briges work the same way, but also provide support for heavy stuctures.
+## Simply More Bridges
+A simple mod that adds more briges types on top of the wood bridges that rimworld core provides. Heavy briges work the same way as wood ones, but also provide support for heavy stuctures. Deep water bridges can be built in deep water.
+You can build these new bridges out of steel, plasteel and stone types.
 
-Research "steel bridges" to build them.
+Research "heavy bridges" and "deep water bridges" to build them.
 
 ## Simple Stockpile Presets
 A mod that adds various presets for stockpile settings in a comfortable float menu. You can use them to easily set often used storage configurations, both generic ones (like freezer stuff) and specific ones (like food, drugs, weapons or clean apparel).
