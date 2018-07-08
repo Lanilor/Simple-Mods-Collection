@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Core bulk meals -->
+
+  <CookMealSimpleBulk.label>簡単な食事x4</CookMealSimpleBulk.label>
+  <CookMealSimpleBulk.description>4食分の食材を簡単に調理します。</CookMealSimpleBulk.description>
+  <CookMealSimpleBulk.jobString>簡単な食事を炊事中</CookMealSimpleBulk.jobString>
+
+  <CookMealFineBulk.label>手のこんだ食事x4</CookMealFineBulk.label>
+  <CookMealFineBulk.description>4食分の食材を簡単に調理します。</CookMealFineBulk.description>
+  <CookMealFineBulk.jobString>手のこんだ食事を炊事中</CookMealFineBulk.jobString>
+
+  <CookMealLavishBulk.label>贅沢な食事x4</CookMealLavishBulk.label>
+  <CookMealLavishBulk.description>4食分の野菜系の食材と、肉系の食材を、特に組み合わせて調理します。素材を厳選するので多くの部分は無駄に捨てられます。</CookMealLavishBulk.description>
+  <CookMealLavishBulk.jobString>贅沢な食事を炊事中</CookMealLavishBulk.jobString>
+
+  <CookMealSurvivalBulk.label>非常用食品を4つ作る</CookMealSurvivalBulk.label>
+  <CookMealSurvivalBulk.description>4食分の生肉系食材と生野菜系食材を組み合わせて調理してパッケージ化を行い非常用食品を作成します。</CookMealSurvivalBulk.description>
+  <CookMealSurvivalBulk.jobString>非常用食品を作成中</CookMealSurvivalBulk.jobString>
+
+
+</LanguageData>
