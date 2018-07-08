@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MakeKibbleBulk.label>ペットフードを4つ作る</MakeKibbleBulk.label>
+  <MakeKibbleBulk.description>4食分の生肉と植物繊維からペットフードを作ります。</MakeKibbleBulk.description>
+  <MakeKibbleBulk.jobString>ペットフードを作成中</MakeKibbleBulk.jobString>
+
+  <MakePemmicanBulk.label>ペミカンを4つ作る</MakePemmicanBulk.label>
+  <MakePemmicanBulk.description>4食分の生肉と植物繊維を組み合わせた保存食です。とても美味しいものではないですが、常温で数年間は保存できます。</MakePemmicanBulk.description>
+  <MakePemmicanBulk.jobString>ペミカンを作成中</MakePemmicanBulk.jobString>
+
+
+</LanguageData>
