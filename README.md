@@ -1,3 +1,8 @@
+## Plant Growth Sync
+This mod adds synchronization of plant groth in growing zones. So it equals little differences when a colonist sows only ome part of a zone and then takes a break before finishing or if single plant where eaten by an animal. The growth sync equals this slowly over time so that the whole zone can be harvested at the same time.
+
+Growth sync only affects crops in your growing zones.
+
 # Simple Mod Collection
 A collection of small mods for Rimworld
 
@@ -26,3 +31,6 @@ Research "heavy bridges" and "deep water bridges" to build them.
 A mod that adds various presets for stockpile settings in a comfortable float menu. You can use them to easily set often used storage configurations, both generic ones (like freezer stuff) and specific ones (like food, drugs, weapons or clean apparel).
 
 This is a QOL mod, no content added or changed. To use it, just make a stockpile and select a preset.
+
+## Single Plant Textures Patch
+A small patch that changes the textures of rice and haygrass to single plants. This gives a cleaner look and a small performance increase.
