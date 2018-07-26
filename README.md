@@ -2,7 +2,7 @@
 A collection of small mods for Rimworld
 
 ## Plant Growth Sync
-This mod adds synchronization of plant groth in growing zones. So it equals little differences when a colonist sows only ome part of a zone and then takes a break before finishing or if single plant where eaten by an animal. The growth sync equals this slowly over time so that the whole zone can be harvested at the same time.
+This mod adds synchronization of plant groth in growing zones. So it equals little differences when a colonist only sows one part of a zone and then takes a break before finishing the rest or if single plants were eaten by an animal. The growth sync equals this slowly over time so that the whole zone can be harvested at the same time. (Or with larger differences after a few harvests.)
 
 Growth sync only affects crops in your growing zones.
 
