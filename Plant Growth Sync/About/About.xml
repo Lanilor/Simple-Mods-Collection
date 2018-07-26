@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Plant Growth Sync</name>
+	<author>Lanilor</author>
+	<url>https://github.com/Lanilor/Simple-Mods-Collection</url>
+	<targetVersion>1.0.0</targetVersion>
+	<description>
+&lt;size=20&gt;Plant Growth Sync&lt;/size&gt;
+
+This mod adds synchronization of plant groth in growing zones. So it equals little differences when a colonist sows only ome part of a zone and then takes a break before finishing or if single plant where eaten by an animal. The growth sync equals this slowly over time so that the whole zone can be harvested at the same time.
+
+Growth sync only affects crops in your growing zones.
+	</description>
+</ModMetaData>
