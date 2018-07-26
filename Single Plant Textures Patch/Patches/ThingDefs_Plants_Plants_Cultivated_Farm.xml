@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Plant_Rice"]/plant/maxMeshCount/text()</xpath>
+		<value>1</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Plant_Rice"]/plant/visualSizeRange/min/text()</xpath>
+		<value>0.2</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Plant_Rice"]/plant/visualSizeRange/max/text()</xpath>
+		<value>0.9</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Plant_Haygrass"]/plant/maxMeshCount/text()</xpath>
+		<value>1</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Plant_Haygrass"]/plant/visualSizeRange/min/text()</xpath>
+		<value>0.2</value>
+	</Operation>
+
+</Patch>

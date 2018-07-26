@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Single Plant Texture Patch</name>
+	<author>Lanilor</author>
+	<url>https://github.com/Lanilor/Simple-Mod-Collection</url>
+	<targetVersion>1.0.0</targetVersion>
+	<description>
+&lt;size=20&gt;Single Plant Texture Patch&lt;/size&gt;
+
+A small patch that changes the textures of rice and haygrass to single plants. This gives a cleaner look and a small performance increase.
+	</description>
+</ModMetaData>
