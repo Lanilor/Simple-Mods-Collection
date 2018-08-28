@@ -7,7 +7,8 @@ using Verse;
 
 namespace SimplyMoreBridges
 {
-	
+
+    [StaticConstructorOnStartup]
 	public abstract class SectionLayer_BridgeProps : SectionLayer
     {
 		

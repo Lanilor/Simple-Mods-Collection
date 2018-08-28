@@ -2,10 +2,10 @@
 <Defs>
 
 	<RecipeDef>
-		<defName>MakePsychoidPekoeBulk</defName>
-		<label>Brew five psychoid pekoe</label>
-		<description>Brew five psychoid pekoe at once to save time when crafting and carrying ingredients.</description>
-		<jobString>Brewing psychoid pekoe.</jobString>
+		<defName>MakePsychiteTeaBulk</defName>
+		<label>Brew five psychite teas</label>
+		<description>Brew five psychite teas at once to save time when crafting and carrying ingredients.</description>
+		<jobString>Brewing psychite pea.</jobString>
 		<workAmount>2000</workAmount>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
@@ -31,7 +31,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<PsychoidPekoe>5</PsychoidPekoe>
+			<PsychiteTea>5</PsychiteTea>
 		</products>
 		<skillRequirements>
 			<Intellectual>2</Intellectual>
