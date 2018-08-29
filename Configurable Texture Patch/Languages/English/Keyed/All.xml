@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Messages -->
+	<CTP_LoadingTextures>Loading textures</CTP_LoadingTextures>
+
+  <!-- Settings -->
+	<CTP_SettingsCategory>Configurable Texture Patch</CTP_SettingsCategory>
+	<CTP_Meal>Meals</CTP_Meal>
+	<CTP_Meal_0>1-2-3 (B19 / vanilla)</CTP_Meal_0>
+	<CTP_Meal_1>1-1-2 (B19 style)</CTP_Meal_1>
+	<CTP_Meal_2>1-1-1 (B18)</CTP_Meal_2>
+	<CTP_Medicine>Medicine</CTP_Medicine>
+	<CTP_Medicine_0>1-2-3 (B19 / vanilla)</CTP_Medicine_0>
+	<CTP_Medicine_1>1-1-2 (B19 style)</CTP_Medicine_1>
+	<CTP_Medicine_2>1-1-1 (B19 style)</CTP_Medicine_2>
+	<CTP_Medicine_3>1-1-1 (B18)</CTP_Medicine_3>
+	<CTP_Silver>Silver</CTP_Silver>
+	<CTP_Silver_0>B19 / vanilla</CTP_Silver_0>
+	<CTP_Silver_1>Unstable test style</CTP_Silver_1>
+	<CTP_Silver_2>B18</CTP_Silver_2>
+	<CTP_Gold>Gold</CTP_Gold>
+	<CTP_Gold_0>B19 / vanilla</CTP_Gold_0>
+	<CTP_Gold_1>B18</CTP_Gold_1>
+	<CTP_PlantHealroot>Healroot plant</CTP_PlantHealroot>
+	<CTP_PlantHealroot_0>B19 / vanilla</CTP_PlantHealroot_0>
+	<CTP_PlantHealroot_1>B18</CTP_PlantHealroot_1>
+
+</LanguageData>
