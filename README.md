@@ -40,3 +40,9 @@ This is a QOL mod, no content added or changed. To use it, just make a stockpile
 
 ## Single Plant Textures Patch
 A small patch that changes the textures of rice and haygrass to single plants. This gives a cleaner look and a small performance increase.
+
+## Small Maps
+This mod adds more smaller map sizes. Small maps mean less resources, less building space and less time to react to raids which increases your overall game difficulty.
+Furthermore smaller maps increase the games performance by a significant part.
+
+Can safely be added or removed to existing saves. New map sizes are 100, 125, 150 and 175.
