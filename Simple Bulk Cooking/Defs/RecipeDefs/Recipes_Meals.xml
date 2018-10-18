@@ -111,7 +111,7 @@
 		<label>cook four packaged survival meals</label>
 		<description>Cooks four packaged survival meals from a combination of raw meat and raw plant ingredients. Much of the ingredients are wasted.</description>
 		<jobString>Cooking survival meals.</jobString>
-		<workAmount>4900</workAmount>
+		<workAmount>1575</workAmount>
 		<ingredients>
 			<li>
 				<filter>
@@ -120,7 +120,7 @@
 						<li>AnimalProductRaw</li>
 					</categories>
 				</filter>
-				<count>2.0</count>
+				<count>1.2</count>
 			</li>
 			<li>
 				<filter>
@@ -128,7 +128,7 @@
 						<li>PlantFoodRaw</li>
 					</categories>
 				</filter>
-				<count>2.0</count>
+				<count>1.2</count>
 			</li>
 		</ingredients>
 		<products>

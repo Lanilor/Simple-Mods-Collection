@@ -16,23 +16,29 @@ namespace ConfigurableTexturePatch
         public const string PathMealLavish = "Things/Item/Meal/Lavish";
         public const string PathMealNutrientPaste = "Things/Item/Meal/NutrientPaste";
         public const string PathMealSurvivalPack = "Things/Item/Meal/SurvivalPack";
+        public const string PathRawBerries = "Things/Item/Resource/PlantFoodRaw/Berries";
         public const string PathMedicineHerbal = "Things/Item/Resource/Medicine/MedicineHerbal";
         public const string PathMedicineIndustrial = "Things/Item/Resource/Medicine/MedicineIndustrial";
         public const string PathMedicineUltratech = "Things/Item/Resource/Medicine/MedicineUltratech";
         public const string PathSilver = "Things/Item/Resource/Silver";
         public const string PathGold = "Things/Item/Resource/Gold";
+        public const string PathPlantBerry = "Things/Plant/BerryPlant";
         public const string PathPlantHealroot = "Things/Plant/Healroot";
 
         private static int DefaultMeal = 0;
+        private static int DefaultRawBerries = 0;
         private static int DefaultMedicine = 0;
         private static int DefaultSilver = 0;
         private static int DefaultGold = 0;
+        private static int DefaultPlantBerry = 0;
         private static int DefaultPlantHealroot = 0;
 
         public static int valueMeal = DefaultSilver;
+        public static int valueRawBerries = DefaultRawBerries;
         public static int valueMedicine = DefaultSilver;
         public static int valueSilver = DefaultSilver;
         public static int valueGold = DefaultGold;
+        public static int valuePlantBerry = DefaultPlantBerry;
         public static int valuePlantHealroot = DefaultPlantHealroot;
 
         public CTPModSettings() : base()
@@ -47,12 +53,15 @@ namespace ConfigurableTexturePatch
             InitTexture(ThingDefOf.MealLavish, PathMealLavish, valueMeal);
             InitTexture(ThingDefOf.MealNutrientPaste, PathMealNutrientPaste, valueMeal);
             InitTexture(ThingDefOf.MealSurvivalPack, PathMealSurvivalPack, valueMeal);
+            InitTexture(ThingDefOf.RawBerries, PathRawBerries, valueRawBerries);
             InitTexture(ThingDefOf.MedicineHerbal, PathMedicineHerbal, valueMedicine);
             InitTexture(ThingDefOf.MedicineIndustrial, PathMedicineIndustrial, valueMedicine);
             InitTexture(ThingDefOf.MedicineUltratech, PathMedicineUltratech, valueMedicine);
             InitTexture(ThingDefOf.Silver, PathSilver, valueSilver);
             InitTexture(ThingDefOf.Gold, PathGold, valueGold);
+            InitTexture(ThingDefOf.Plant_Berry, PathPlantBerry, valuePlantBerry);
             InitTexture(ThingDefOf.Plant_Healroot, PathPlantHealroot, valuePlantHealroot);
+            InitTexture(ThingDefOf.Plant_HealrootWild, PathPlantHealroot, valuePlantHealroot);
         }
 
         private static void InitTexture(ThingDef def, string pathPart, int val)
@@ -63,6 +72,25 @@ namespace ConfigurableTexturePatch
                 Traverse.Create(def.graphicData).Method("Init").GetValue();
             }
         }
+
+        /*private static void InitTexturePlant(ThingDef def, string pathPart, int val, bool immature, bool leafless)
+        {
+            if (val > 0 && def.plant != null)
+            {
+                string path = pathPart + "_V" + val;
+                def.graphicData.texPath = path;
+                if (immature)
+                {
+                    Traverse.Create(def.plant).Field("immatureGraphicPath").SetValue(path + "_Immature");
+                }
+                if (leafless)
+                {
+                    Traverse.Create(def.plant).Field("leaflessGraphicPath").SetValue(path + "_Leafless");
+                }
+                Traverse.Create(def.graphicData).Method("Init").GetValue();
+                def.plant.PostLoadSpecial(def);
+            }
+        }*/
 
         public void DoWindowContents(Rect rect)
         {
@@ -103,6 +131,22 @@ namespace ConfigurableTexturePatch
                     SetTexture(ThingDefOf.MealNutrientPaste, PathMealNutrientPaste + "_V2");
                     SetTexture(ThingDefOf.MealSurvivalPack, PathMealSurvivalPack + "_V2");
                     valueMeal = 2;
+                }));
+                Find.WindowStack.Add(new FloatMenu(menuEntries));
+            }
+            ls.Gap(GapHeight);
+            if (ls.ButtonTextLabeled("CTP_RawBerries".Translate(), ("CTP_RawBerries_" + valueRawBerries).Translate()))
+            {
+                List<FloatMenuOption> menuEntries = new List<FloatMenuOption>();
+                menuEntries.Add(new FloatMenuOption(("CTP_RawBerries_0").Translate(), delegate
+                {
+                    SetTexture(ThingDefOf.RawBerries, PathRawBerries);
+                    valueRawBerries = 0;
+                }));
+                menuEntries.Add(new FloatMenuOption(("CTP_RawBerries_1").Translate(), delegate
+                {
+                    SetTexture(ThingDefOf.RawBerries, PathRawBerries + "_V1");
+                    valueRawBerries = 1;
                 }));
                 Find.WindowStack.Add(new FloatMenu(menuEntries));
             }
@@ -182,6 +226,22 @@ namespace ConfigurableTexturePatch
             ls.GapGapLine(GapHeight);
 
             // Plant
+            if (ls.ButtonTextLabeled("CTP_PlantBerry".Translate(), ("CTP_PlantBerry_" + valuePlantBerry).Translate()))
+            {
+                List<FloatMenuOption> menuEntries = new List<FloatMenuOption>();
+                menuEntries.Add(new FloatMenuOption(("CTP_PlantBerry_0").Translate(), delegate
+                {
+                    SetTexture(ThingDefOf.Plant_Berry, PathPlantBerry);
+                    valuePlantBerry = 0;
+                }));
+                menuEntries.Add(new FloatMenuOption(("CTP_PlantBerry_1").Translate(), delegate
+                {
+                    SetTexture(ThingDefOf.Plant_Berry, PathPlantBerry + "_V1");
+                    valuePlantBerry = 1;
+                }));
+                Find.WindowStack.Add(new FloatMenu(menuEntries));
+            }
+            ls.Gap(GapHeight);
             if (ls.ButtonTextLabeled("CTP_PlantHealroot".Translate(), ("CTP_PlantHealroot_" + valuePlantHealroot).Translate()))
             {
                 List<FloatMenuOption> menuEntries = new List<FloatMenuOption>();
@@ -209,9 +269,11 @@ namespace ConfigurableTexturePatch
         {
             base.ExposeData();
             Scribe_Values.Look(ref valueMeal, "valueMeal", DefaultMeal);
+            Scribe_Values.Look(ref valueRawBerries, "valueRawBerries", DefaultRawBerries);
             Scribe_Values.Look(ref valueMedicine, "valueMedicine", DefaultMedicine);
             Scribe_Values.Look(ref valueSilver, "valueSilver", DefaultSilver);
             Scribe_Values.Look(ref valueGold, "valueGold", DefaultGold);
+            Scribe_Values.Look(ref valuePlantBerry, "valuePlantBerry", DefaultPlantBerry);
             Scribe_Values.Look(ref valuePlantHealroot, "valuePlantHealroot", DefaultPlantHealroot);
         }
 
@@ -234,6 +296,35 @@ namespace ConfigurableTexturePatch
                 }
             }
         }
+
+        /*private void SetTexturePlant(ThingDef def, string path, bool immature, bool leafless)
+        {
+            def.graphicData.texPath = path;
+            if (immature)
+            {
+                Traverse.Create(def.plant).Field("immatureGraphicPath").SetValue(path + "_Immature");
+            }
+            if (leafless)
+            {
+                Traverse.Create(def.plant).Field("leaflessGraphicPath").SetValue(path + "_Leafless");
+            }
+            Traverse.Create(def.graphicData).Method("Init").GetValue();
+            def.plant.PostLoadSpecial(def);
+
+            // Redraw all items if playing
+            if (Current.ProgramState == ProgramState.Playing)
+            {
+                List<Map> maps = Find.Maps;
+                foreach (Map map in maps)
+                {
+                    List<Thing> things = map.listerThings.ThingsOfDef(def);
+                    foreach (Thing t in things)
+                    {
+                        t.Notify_ColorChanged();
+                    }
+                }
+            }
+        }*/
 
     }
 

@@ -3,13 +3,13 @@
 	<name>Small Maps</name>
 	<author>Lanilor</author>
 	<url>https://github.com/Lanilor/Simple-Mod-Collection</url>
-	<targetVersion>0.19.0</targetVersion>
+	<targetVersion>1.0.0</targetVersion>
 	<description>
 &lt;size=20&gt;Small Maps&lt;/size&gt;
 
 This mod adds more smaller map sizes. Small maps mean less resources, less building space and less time to react to raids which increases your overall game difficulty.
 Furthermore smaller maps increase the games performance by a significant part.
 
-Can safely be added or removed to existing saves. New map sizes are 100, 125, 150 and 175.
+Can safely be added or removed to existing saves. New map sizes are 50, 75, 100 and 150.
 	</description>
 </ModMetaData>

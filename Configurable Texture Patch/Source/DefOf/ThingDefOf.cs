@@ -13,12 +13,13 @@ namespace ConfigurableTexturePatch
             DefOfHelper.EnsureInitializedInCtor(typeof(ThingDefOf));
 		}
 
-        // Item - Meal
+        // Item - Meal/Food
         public static ThingDef MealSimple;
         public static ThingDef MealFine;
         public static ThingDef MealLavish;
         public static ThingDef MealNutrientPaste;
         public static ThingDef MealSurvivalPack;
+        public static ThingDef RawBerries;
 
         // Item - Resource
         public static ThingDef MedicineHerbal;
@@ -28,6 +29,7 @@ namespace ConfigurableTexturePatch
         public static ThingDef Gold;
 
         // Plant
+        public static ThingDef Plant_Berry;
         public static ThingDef Plant_Healroot;
         public static ThingDef Plant_HealrootWild;
 

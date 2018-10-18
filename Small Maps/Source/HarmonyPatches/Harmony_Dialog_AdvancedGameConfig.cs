@@ -12,7 +12,7 @@ namespace SmallMaps
 
         public static void Postfix(Dialog_AdvancedGameConfig __instance)
         {
-            Traverse.Create(__instance).Field("MapSizes").SetValue(new int[] { 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 400 });
+            Traverse.Create(__instance).Field("MapSizes").SetValue(new int[] { 50, 75, 100, 150, 200, 225, 250, 275, 300, 325, 350, 400 });
         }
 
     }

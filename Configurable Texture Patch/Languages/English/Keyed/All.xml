@@ -10,6 +10,9 @@
 	<CTP_Meal_0>1-2-3 (B19 / vanilla)</CTP_Meal_0>
 	<CTP_Meal_1>1-1-2 (B19 style)</CTP_Meal_1>
 	<CTP_Meal_2>1-1-1 (B18)</CTP_Meal_2>
+	<CTP_RawBerries>Raw berries</CTP_RawBerries>
+	<CTP_RawBerries_0>B19 / vanilla</CTP_RawBerries_0>
+	<CTP_RawBerries_1>B18</CTP_RawBerries_1>
 	<CTP_Medicine>Medicine</CTP_Medicine>
 	<CTP_Medicine_0>1-2-3 (B19 / vanilla)</CTP_Medicine_0>
 	<CTP_Medicine_1>1-1-2 (B19 style)</CTP_Medicine_1>
@@ -22,6 +25,9 @@
 	<CTP_Gold>Gold</CTP_Gold>
 	<CTP_Gold_0>B19 / vanilla</CTP_Gold_0>
 	<CTP_Gold_1>B18</CTP_Gold_1>
+	<CTP_PlantBerry>Berry bush</CTP_PlantBerry>
+	<CTP_PlantBerry_0>B19 / vanilla (blue)</CTP_PlantBerry_0>
+	<CTP_PlantBerry_1>Unstable (red / vanilla style)</CTP_PlantBerry_1>
 	<CTP_PlantHealroot>Healroot plant</CTP_PlantHealroot>
 	<CTP_PlantHealroot_0>B19 / vanilla</CTP_PlantHealroot_0>
 	<CTP_PlantHealroot_1>B18</CTP_PlantHealroot_1>
