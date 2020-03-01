@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Patch - Lanilor.SinglePlantTexturePatch ========== -->
+    <!-- Targeting Core\Defs\ThingDefs_Plants\Plants_Cultivated_Farm.xml -->
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Plant_Rice"]/plant/maxMeshCount</xpath>
+                <value>
+                    <maxMeshCount>1</maxMeshCount>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Plant_Rice"]/plant/visualSizeRange</xpath>
+                <value>
+                    <visualSizeRange>0.2~0.9</visualSizeRange>
+                </value>
+            </li>            
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Plant_Haygrass"]/plant/maxMeshCount</xpath>
+                <value>
+                    <maxMeshCount>1</maxMeshCount>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Plant_Haygrass"]/plant/visualSizeRange</xpath>
+                <value>
+                    <visualSizeRange>0.2~0.8</visualSizeRange>
+                </value>
+            </li>            
+
+        </operations>
+    </Operation>
+
+</Patch>

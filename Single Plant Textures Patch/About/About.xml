@@ -2,8 +2,12 @@
 <ModMetaData>
 	<name>Single Plant Texture Patch</name>
 	<author>Lanilor</author>
-	<url>https://github.com/Lanilor/Simple-Mod-Collection</url>
-	<targetVersion>1.0.0</targetVersion>
+	<url>https://github.com/Lanilor/Simple-Mods-Collection</url>
+	<packageId>Lanilor.SinglePlantTexturePatch</packageId>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
 	<description>
 &lt;size=20&gt;Single Plant Texture Patch&lt;/size&gt;
 
