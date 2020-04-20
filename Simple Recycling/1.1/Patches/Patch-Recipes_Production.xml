@@ -1,0 +1,8 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef[defName="RecycleApparel"]/workSpeedStat</xpath>
+    <value>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    </value>
+  </Operation>
+</Patch>
